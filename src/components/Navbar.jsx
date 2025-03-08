@@ -21,14 +21,18 @@ const Navbar = () => {
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled ? "bg-primary-700 shadow-lg" : "bg-transparent"
       }`}
+      style={{ position: "fixed", top: 0, left: 0, right: 0 }}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          <a href="/" className="text-2xl font-bold text-white">
+        <div className="flex items-center justify-between h-16 md:h-20">
+          <a
+            href="/"
+            className="text-2xl font-bold text-white flex items-center"
+          >
             <img
               src="https://i.ibb.co/fdw3BLVs/youngminds-removebg-preview.png"
-              alt=""
-              className="w-20 h-20"
+              alt="Young Minds Logo"
+              className="w-16 h-16 md:w-20 md:h-20"
             />
           </a>
 
@@ -41,8 +45,9 @@ const Navbar = () => {
           </div>
 
           <button
-            className="md:hidden text-white"
+            className="md:hidden text-white focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label="Toggle menu"
           >
             <span className="sr-only">Menu</span>
             <svg
