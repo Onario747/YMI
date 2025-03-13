@@ -6,6 +6,8 @@ import {
   FaUsers,
   FaHeart,
   FaGraduationCap,
+  FaUserMd,
+  FaCross,
 } from "react-icons/fa";
 
 const Volunteers = () => {
@@ -31,7 +33,7 @@ const Volunteers = () => {
       icon: <FaGraduationCap className="w-12 h-12 text-primary-300" />,
       title: "Educational Assistant",
       description:
-        "Support our educational programs by helping develop materials and assisting in workshops.",
+        "Support our educational programs by helping develop materials and assisting in workshops for individuals with autism.",
     },
     {
       icon: <FaHeart className="w-12 h-12 text-primary-300" />,
@@ -80,6 +82,109 @@ const Volunteers = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Young Minds Community Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="max-w-5xl mx-auto bg-secondary-50 rounded-xl p-8 shadow-lg border border-secondary-200 mb-16"
+        >
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="md:w-1/3 flex justify-center">
+              <FaCross className="w-24 h-24 text-secondary-500" />
+            </div>
+            <div className="md:w-2/3">
+              <h3 className="text-3xl font-bold mb-4 text-gray-900">
+                Young Minds Community
+              </h3>
+              <p className="text-gray-700 mb-4">
+                A sub-unit of the Young Minds Initiative that aims to foster
+                love, togetherness, and a sense of community.
+              </p>
+              <ul className="space-y-2 text-gray-700 mb-6">
+                <li className="flex items-start">
+                  <span className="text-secondary-500 mr-2">•</span>
+                  <span>
+                    We encourage individuals with autism that they can be the
+                    best versions of themselves and succeed in any career path
+                    they choose.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-500 mr-2">•</span>
+                  <span>
+                    We build a supportive community where everyone feels valued
+                    and understood.
+                  </span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-secondary-500 mr-2">•</span>
+                  <span>Most importantly, we show love through Christ.</span>
+                </li>
+              </ul>
+              <div className="bg-secondary-100 p-4 rounded-lg">
+                <p className="font-bold text-center text-gray-900">
+                  MOTTO: GOD LOOKED AT THE WORLD AND KNEW THAT IT NEEDED ONE OF
+                  YOU, SO YOU ARE IMPORTANT AND HAVE A PURPOSE TO FULFILL
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Medical Professionals Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          className="max-w-5xl mx-auto bg-primary-50 rounded-xl p-8 shadow-lg border border-primary-200 mb-16"
+        >
+          <h3 className="text-2xl font-bold mb-4 text-center text-gray-900">
+            For Medical Professionals & Therapists
+          </h3>
+          <p className="text-gray-700 text-center mb-6">
+            We welcome healthcare professionals, therapists, and specialists who
+            want to contribute their expertise to support individuals with
+            autism.
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white p-6 rounded-lg shadow">
+              <div className="flex justify-center mb-4">
+                <FaUserMd className="w-10 h-10 text-primary-500" />
+              </div>
+              <h4 className="text-xl font-semibold mb-2 text-center">
+                Medical Professionals
+              </h4>
+              <p className="text-gray-600 text-center">
+                Doctors, nurses, and healthcare providers can offer specialized
+                support and medical guidance.
+              </p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow">
+              <div className="flex justify-center mb-4">
+                <FaHandsHelping className="w-10 h-10 text-primary-500" />
+              </div>
+              <h4 className="text-xl font-semibold mb-2 text-center">
+                Therapists & Specialists
+              </h4>
+              <p className="text-gray-600 text-center">
+                Speech therapists, occupational therapists, and behavioral
+                specialists can provide valuable expertise.
+              </p>
+            </div>
+          </div>
+          <div className="flex justify-center mt-8">
+            <motion.a
+              href="#professional-volunteer"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="px-6 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-300 shadow"
+            >
+              Professional Volunteer Application
+            </motion.a>
+          </div>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}

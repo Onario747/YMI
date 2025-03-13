@@ -98,10 +98,6 @@ const Contact = () => {
                 <span>youngmindsinitiative0.1@gmail.com</span>
               </div>
               <div className="flex items-center space-x-4">
-                <FaPhone className="w-6 h-6 text-primary-600" />
-                <span>+234 903 809 5649</span>
-              </div>
-              <div className="flex items-center space-x-4">
                 <FaMapMarkerAlt className="w-6 h-6 text-primary-600" />
                 <span>Nigeria</span>
               </div>
