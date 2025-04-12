@@ -176,7 +176,8 @@ const Volunteers = () => {
           </div>
           <div className="flex justify-center mt-8">
             <motion.a
-              href="#professional-volunteer"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfs375n2eS_NDiw1zGb8MeLhPTBr0qMV1t08JQgMq_JrkvMIg/viewform?usp=dialog"
+              target="_blank"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-6 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 transition-colors duration-300 shadow"
@@ -207,7 +208,7 @@ const Volunteers = () => {
               className="px-8 py-4 bg-white text-primary-600 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg"
               onClick={() => {
                 window.open(
-                  "https://docs.google.com/forms/d/e/1FAIpQLSfs375n2eS_NDiw1zGb8MeLhPTBr0qMV1t08JQgMq_JrkvMIg/viewform?usp=dialog",
+                  "https://docs.google.com/forms/d/e/1FAIpQLSewfpbFtbNvQyjrCZSM6BI_5KjFQWU0haF0LPvczhAANlInLg/viewform?usp=dialog",
                   "_blank"
                 );
               }}
