@@ -205,6 +205,12 @@ const Volunteers = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 bg-white text-primary-600 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg"
+              onClick={() => {
+                window.open(
+                  "https://docs.google.com/forms/d/e/1FAIpQLSfs375n2eS_NDiw1zGb8MeLhPTBr0qMV1t08JQgMq_JrkvMIg/viewform?usp=dialog",
+                  "_blank"
+                );
+              }}
             >
               Apply to Volunteer
             </motion.button>
